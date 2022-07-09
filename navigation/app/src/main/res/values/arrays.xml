@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="language_array">
+        <item>Default for Device</item>
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Indonesian</item>
+    </string-array>
+
+    <string-array name="language_values_array">
+        <item>@string/default_locale</item>
+        <item>en</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>in</item>
+    </string-array>
+
+    <string-array name="unit_type_array">
+        <item>Default for Device</item>
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+
+    <string-array name="unit_type_values_array">
+        <item>@string/default_unit_type</item>
+        <item>metric</item>
+        <item>imperial</item>
+    </string-array>
+
+    <string-array name="route_profile_array">
+        <item>Driving</item>
+        <item>Cycling</item>
+        <item>MTB</item>
+        <item>Racing bike</item>
+        <item>Walking</item>
+        <item>Hike</item>
+        <item>Scooter</item>
+        <item>Small truck</item>
+        <item>Truck</item>
+    </string-array>
+
+    <string-array name="route_profile_values_array">
+        <item>driving</item>
+        <item>cycling</item>
+        <item>mtb</item>
+        <item>racingbike</item>
+        <item>walking</item>
+        <item>hike</item>
+        <item>scooter</item>
+        <item>small_truck</item>
+        <item>truck</item>
+    </string-array>
+
+    <string-array name="titles">
+        <item>two lacation</item>
+        <item>clues</item>
+    </string-array>
+</resources>

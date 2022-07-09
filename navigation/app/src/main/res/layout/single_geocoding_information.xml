@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="5dp">
+    <TextView
+        android:id="@+id/geocoding_index"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:textSize="18sp"
+        android:textColor="#0D76D3"/>
+    <TextView
+        android:id="@+id/geocoding_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/geocoding_index"
+        android:textSize="14sp"
+        android:textColor="#1a1a1a"
+        android:text="New York"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/geocoding_street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#8e8e8e"
+        android:layout_below="@id/geocoding_name"
+        android:layout_toRightOf="@+id/geocoding_index"
+        android:layout_marginTop="2dp"
+        android:text="street"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/geocoding_codeAndCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#8e8e8e"
+        android:layout_below="@id/geocoding_street"
+        android:layout_toRightOf="@+id/geocoding_index"
+        android:layout_marginTop="2dp"
+        android:text="postcode city"
+        android:paddingLeft="20dp"/>
+    <Button
+        android:id="@+id/gothere_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="280dp"
+        android:background="@drawable/gothere_icon" />
+</RelativeLayout>

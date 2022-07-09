@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!-- If you use the Mapbox Tilesource, you need to set uiLogo=true - see https://www.mapbox.com/help/how-attribution-works/ -->
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dp"
+        app:mapbox_uiAttribution="true"
+        app:mapbox_uiAttributionMarginLeft="5dp"
+        app:mapbox_uiLogo="false" >
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            tools:ignore="DuplicateIds" />
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/speech_btn"
+            android:layout_marginBottom="25dp"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/voice_icon" />
+
+        <EditText
+            android:id="@+id/search_location"
+            android:layout_marginBottom="25dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Search location or POI"
+            android:imeOptions="actionSearch"
+            android:singleLine="true" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/open_location_list"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:onClick="openLocationList"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/routeInfoLayout"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:paddingTop="10dp"
+                android:paddingBottom="9dp">
+                <com.graphhopper.navigation.example.UnderLineLinearLayout
+                    android:id="@+id/underline_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    app:point_size="5dp">
+                    <TextView
+                        android:id="@+id/routeOrigin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#1a1a1a"
+                        android:text="测试一"
+                        android:paddingTop="2dp"
+                        android:paddingStart="40dp"
+                        android:paddingBottom="10dp"/>
+                    <TextView
+                        android:id="@+id/routeDestination"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#1a1a1a"
+                        android:text="测试二"
+                        android:paddingTop="5dp"
+                        android:paddingStart="40dp"
+                        android:paddingBottom="4dp"/>
+                </com.graphhopper.navigation.example.UnderLineLinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:paddingBottom="5dp">
+                <Button
+                    android:id="@+id/navigate"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/nagivate_icon"
+                    android:onClick="routeNavigate"
+                    android:enabled="false"/>
+                <TextView
+                    android:id="@+id/routeDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/navigate"
+                    android:text="距离"
+                    android:textSize="14sp"
+                    android:textColor="#1a1a1a"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="4dp"
+                    android:paddingStart="15dp"/>
+                <TextView
+                    android:id="@+id/routeTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/navigate"
+                    android:text="时间"
+                    android:textSize="14sp"
+                    android:textColor="#1a1a1a"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="4dp"
+                    android:paddingEnd="15dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+bar,0
+bbq,1
+biergarten,2
+cafe,3
+drinking water,4
+school,5
+fast food,6
+food court,7
+ice cream,8
+pub,9
+restaurant,10
+college,11
+driving school,12
+kindergarten,13
+language school,14
+library,15
+music school,17
+university,18
+bicycle parking,19
+bicycle repair station,20
+bicycle rental,21
+bus station,24
+car rental,25
+car sharing,26
+car wash,27
+vehicle inspection,28
+charging station,29
+ferry terminal,30
+fuel,31
+motorcycle parking,33
+parking,34
+parking entrance,35
+parking space,36
+taxi,37
+atm,38
+bank,39
+bureau de change,40
+clinic,42
+dentist,43
+doctors,44
+hospital,45
+nursing home,46
+pharmacy,47
+social facility,48
+veterinary,49
+arts centre,50
+cinema,53
+community centre,54
+fountain,55
+gambling,56
+nightclub,57
+public bookcase,59
+social centre,60
+stripclub,61
+studio,62
+swingerclub,63
+theatre,64
+animal boarding,65
+animal shelter,66
+bench,68
+childcare,69
+clock,70
+courthouse,72
+embassy,75
+fire station,76
+grave yard,78
+internet cafe,80
+marketplace,83
+place of worship,86
+police,87
+post box,88
+post depot,89
+post office,90
+prison,91
+public bath,92
+ranger station,93
+recycling,94
+shelter,97
+shower,98
+telephone,99
+toilets,100
+townhall,101
+vending machine,102
+waste basket,103
+waste disposal,104
+waste transfer station,105
+water point,107
