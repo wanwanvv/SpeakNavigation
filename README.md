@@ -43,7 +43,7 @@ android端的代码为navigation文件夹，使用android studio。在'navigatio
 <p align="center">
 <img src=".\img\android1.png" height = "500" alt="" align=center />
 <br><br>
-<b>Figure 3.</b> 基于线索的路径导航界面.
+<b>Figure 2.</b> 基于线索的路径导航界面.
 </p>
 
 + 用户通过点击语音按钮向系统语音输入路径查询“I want to find a path…”
