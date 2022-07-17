@@ -13,7 +13,7 @@ android端的代码为navigation文件夹，使用android studio。在'navigatio
 
 # Framework
 <p align="center">
-<img src=".\img\framework.png" height = "180" alt="" align=center />
+<img src=".\img\framework.png" height = "500" alt="" align=center />
 <br><br>
 <b>Figure 1.</b> Framework.
 </p>
@@ -41,10 +41,11 @@ android端的代码为navigation文件夹，使用android studio。在'navigatio
 # 运行效果
 ## 基于线索的路径导航
 <p align="center">
-<img src=".\img\android1.png" height = "180" alt="" align=center />
+<img src=".\img\android1.png" height = "500" alt="" align=center />
 <br><br>
 <b>Figure 1.</b> 基于线索的路径导航界面.
 </p>
+
 + 用户通过点击语音按钮向系统语音输入路径查询“I want to find a path…”
 + 系统首先将语音转化为文本（图3-a）
 + 然后提取出文本中的关键词（POIs和距离）显示在底部的信息栏（图3-b）
@@ -55,10 +56,11 @@ android端的代码为navigation文件夹，使用android studio。在'navigatio
 
 ## POI搜索
 <p align="center">
-<img src=".\img\android2.png" height = "180" alt="" align=center />
+<img src=".\img\android2.png" height = "500" alt="" align=center />
 <br><br>
 <b>Figure 1.</b> POIs搜索界面.
 </p>
+
 + 在上方的搜索框内输入要搜索的POI类型，SpeakNav首先会判断出这是一个POI搜索请求，然后将搜索结果标记在地图上（图4-a）
 + 同时会弹出列表显示搜索结果的名称、街道等信息（图4-b）
 + 地图标记上的数字与列表中的结果顺序相对应
