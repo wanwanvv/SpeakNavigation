@@ -20,9 +20,9 @@ android端的代码为navigation文件夹，使用android studio。在'navigatio
 
 ## User Interface Layser用户接口层
 ### Android客户端
-+ Mapbox：
++ Mapbox：地理信息数据可视化工具，提供地图、定位和导航功能
 + iFLYTEK(科大讯飞)：实现语音识别，将语音转为文本
-+ graphhopper：
++ graphhopper：Grasshopper 是一个开源的地图导航引擎，Java 语言开发，因此可以通过导入依赖很好的集成到Java项目中。
 
 
 ## Query Processing Layer查询处理层
@@ -35,7 +35,7 @@ android端的代码为navigation文件夹，使用android studio。在'navigatio
 + 根据途径地线索，实现高效的Greedy Clue Search (GCS) 算法，为用户返回与查询相匹配的可行路径
 
 ## Storage and Index Layer存储和索引层
-+ Android-MapDB
++ Android-MapDB：是一个开源的，内嵌的Java数据引擎和集合框架。提供了Map,Set,List,Queue,BitMap，支持范围查询，数据过期，压缩，堆外存储的特性
 + SFC-QuadTree：将空间填充曲线和倒排文件结合的一种混合索引
 
 # 运行效果
